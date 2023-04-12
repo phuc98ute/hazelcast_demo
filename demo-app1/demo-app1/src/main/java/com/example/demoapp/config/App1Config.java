@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 public class App1Config {
 
     @Bean
-    HazelcastInstance hazelcastClient() {
+    HazelcastInstance hazelcastInstanceHz() {
         return Hazelcast.newHazelcastInstance();
     }
 }
