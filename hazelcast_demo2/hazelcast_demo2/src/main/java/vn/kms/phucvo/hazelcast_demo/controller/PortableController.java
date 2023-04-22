@@ -1,7 +1,5 @@
-package com.example.demoapp.controller;
+package vn.kms.phucvo.hazelcast_demo.controller;
 
-import com.example.demoapp.infrastructure.Customer;
-import com.example.demoapp.infrastructure.portable.PortableCustomer;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.map.IMap;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import vn.kms.phucvo.hazelcast_demo.infrastructure.portable.PortableCustomer;
 
 @Controller
 @RequestMapping("/hz/portable")

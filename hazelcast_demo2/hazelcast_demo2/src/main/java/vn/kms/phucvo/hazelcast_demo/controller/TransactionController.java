@@ -1,4 +1,4 @@
-package com.example.demoapp.controller;
+package vn.kms.phucvo.hazelcast_demo.controller;
 
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.map.IMap;

@@ -1,4 +1,4 @@
-package com.example.demoapp.infrastructure.portable;
+package vn.kms.phucvo.hazelcast_demo.infrastructure.portable;
 
 import com.hazelcast.nio.serialization.Portable;
 import com.hazelcast.nio.serialization.PortableReader;

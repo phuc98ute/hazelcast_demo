@@ -1,7 +1,5 @@
-package com.example.demoapp.controller;
+package vn.kms.phucvo.hazelcast_demo.controller;
 
-import com.example.demoapp.infrastructure.Customer;
-import com.example.demoapp.listener.HazelcastEntryListener;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.map.IMap;
 import com.hazelcast.query.Predicate;
@@ -12,18 +10,21 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+import vn.kms.phucvo.hazelcast_demo.infrastructure.Customer;
+import vn.kms.phucvo.hazelcast_demo.listener.HazelcastEntryListener;
 
 import java.util.Set;
 
 @Controller
 @RequestMapping("/hz/map")
 public class DataMapController {
+
     @Autowired
     HazelcastInstance hazelcastInstanceHz;
 
     @GetMapping("/welcome")
     public ResponseEntity getString() {
-        IMap<String, String> map = hazelcastInstanceHz.getMap("simpleString-1");
+        IMap<String, String> map = hazelcastInstanceHz.getMap("simpleStringMap-1");
 
         String message = map.get("message");
         return new ResponseEntity("Get message from hazelcast map success with message: " + message, HttpStatus.OK);
