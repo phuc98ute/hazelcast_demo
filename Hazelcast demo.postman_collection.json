@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "f20f331f-3318-42c7-8ed1-abcd2abf7883",
+		"name": "Hazelcast demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "App1 - update customer map",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/hz/map/updateCustomer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"hz",
+						"map",
+						"updateCustomer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "App1 - update message string",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/hz/map/updateString?message=changewelcome",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"hz",
+						"map",
+						"updateString"
+					],
+					"query": [
+						{
+							"key": "message",
+							"value": "changewelcome"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "App1 - update bigMap",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/hz/map/updateBigMap",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"hz",
+						"map",
+						"updateBigMap"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
